@@ -13,10 +13,8 @@
     </header>
 
     <main class="contenedorCalculadora">
-        <div class="pantalla">
-            <div class="resultado">
-                0
-            </div>
+        <div class="resultado">
+            <input type="text" class="pantalla">
         </div>
 
         <div class="filaSuperior">
@@ -48,13 +46,9 @@
 
         <div class="filaInferior">
             <div class="numero0" onclick="agregarNumero('0')">0</div>
-            <div class="puntodecimal">.</div>
-            <div class="suma">+</div>
+            <div class="puntodecimal" onclick="agregarPunto('.')">.</div>
+            <div class="suma" onclick="asignarOperador('+')">+</div>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
