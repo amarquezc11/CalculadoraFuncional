@@ -1,7 +1,12 @@
 let entradaActual = '';
 let operador = '';
 let respuesta = '';
-const pantalla = document.getElementsByClassName(pantalla);
+const pantalla = document.getElementById('pantalla');
+
+
+function actualizarPantalla(){
+pantalla.value = entradaActual;
+}
 
 function limpiarPantalla(){
     let entradaActual = '';
@@ -9,6 +14,7 @@ function limpiarPantalla(){
     let respuesta = '';
     actualizarPantalla();
 }
+
 function borrarUltimodigito(){
 
 }
@@ -16,15 +22,13 @@ function calcular(){
 
 }
 function asignarOperador(){
-
+ operador = op;
+ entradaActual += ' ' + op + ' ';
 }
-function agregarNumero(Number){
-entradaActual += Number;
-actualizarPantalla();
+function agregarNumero(number){
+    entradaActual += number;
+    actualizarPantalla();
 }
 function agregarPunto(){
 
-}
-function actualizarPantalla(){
-pantalla.value = entradaActual;
 }

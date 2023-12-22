@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="/CalculadoraFuncional/css/estilos.css">
-    <link rel="icon" href="/CalculadoraFuncional/img/calculadora.ico">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="icon" href="/img/calculadora.ico">
 </head>
 <body>
     <header>
@@ -14,41 +14,42 @@
 
     <main class="contenedorCalculadora">
         <div class="resultado">
-            <input type="text" class="pantalla" readonly>
+            <input type="text" id="pantalla" readonly>
         </div>
 
         <div class="filaSuperior">
-            <div class="limpiar" onclick="limpiarPantalla()">C</div>
-            <div class="borrar" onclick="borrarUltimoDigito()">Borrar</div>
-            <div class="calcular" onclick="calcular()">=</div>
+            <div class="funciones" onclick="limpiarPantalla()">C</div>
+            <div class="funciones" onclick="borrarUltimoDigito()">Borrar</div>
+            <div class="funciones" onclick="calcular()">=</div>
         </div>
 
         <div class="filaNumeros">
-            <div class="numero7" onclick="agregarNumero(7)">7</div>
-            <div class="numero8" onclick="agregarNumero(8)">8</div>
-            <div class="numero9" onclick="agregarNumero(9)">9</div>
-            <div class="dividir" onclick="asignarOperador('/')">/</div>
+            <div class="numeros" onclick="agregarNumero('7')">7</div>
+            <div class="numeros" onclick="agregarNumero('8')">8</div>
+            <div class="numeros" onclick="agregarNumero('9')">9</div>
+            <div class="operador" onclick="asignarOperador('/')">/</div>
         </div>
 
         <div class="filaNumeros">
-            <div class="numero4" onclick="agregarNumero('4')">4</div>
-            <div class="numero5" onclick="agregarNumero('5')">5</div>
-            <div class="numero6" onclick="agregarNumero('6')">6</div>
-            <div class="multiplicar" onclick="asignarOperador('*')">*</div>
+            <div class="numeros" onclick="agregarNumero('4')">4</div>
+            <div class="numeros" onclick="agregarNumero('5')">5</div>
+            <div class="numeros" onclick="agregarNumero('6')">6</div>
+            <div class="operador" onclick="asignarOperador('*')">*</div>
         </div>
 
         <div class="filaNumeros">
-            <div class="numero1" onclick="agregarNumero('1')">1</div>
-            <div class="numero2" onclick="agregarNumero('2')">2</div>
-            <div class="numero3" onclick="agregarNumero('3')">3</div>
-            <div class="resta" onclick="asignarOperador('-')">-</div>
+            <div class="numeros" onclick="agregarNumero('1')">1</div>
+            <div class="numeros" onclick="agregarNumero('2')">2</div>
+            <div class="numeros" onclick="agregarNumero('3')">3</div>
+            <div class="operador" onclick="asignarOperador('-')">-</div>
         </div>
 
         <div class="filaInferior">
-            <div class="numero0" onclick="agregarNumero('0')">0</div>
-            <div class="puntodecimal" onclick="agregarPunto('.')">.</div>
-            <div class="suma" onclick="asignarOperador('+')">+</div>
+            <div class="numeros" onclick="agregarNumero('0')">0</div>
+            <div class="punto" onclick="agregarPunto('.')">.</div>
+            <div class="operador" onclick="asignarOperador('+')">+</div>
         </div>
     </main>
+    <script src="/js/programa1.js"></script>
 </body>
 </html>

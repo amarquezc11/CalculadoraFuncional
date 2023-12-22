@@ -12,7 +12,7 @@ body{
     background-color: rgb(111, 90, 231);
     display: flex;
     flex-direction: column;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 20px;
     box-shadow: 5px 5px 20px 0px;
 }
@@ -21,11 +21,12 @@ body{
     justify-content: center;
     margin: 10px 0px;
 }
-.pantalla{
+#pantalla{
     width: 220px;
     font-size: larger;
     height: fit-content;
     text-align: right;
+    font-size: medium;
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -36,14 +37,15 @@ body{
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
-.limpiar, .borrar, .calcular{
+.funciones{
    display: inline;
    padding: 10px;
    background-color: rgb(228, 90, 90);
    border: 1px solid black;
    border-radius: 10px;
 }
-.numero9, .numero8, .numero7, .numero6, .numero5, .numero4, .numero3, .numero2, .numero1, .numero0, .puntodecimal{
+
+.numeros, .punto{
     display: inline;
     padding: 10px;
     background-color: bisque;
@@ -51,22 +53,22 @@ body{
     border-radius: 10px;
     text-align: center;
 }
-.dividir, .multiplicar, .suma, .resta{
+.operador{
     display: inline;
     padding: 10px;
     background-color: rgb(151, 238, 139);
     border: 1px solid black;
     border-radius: 10px;
 }
-.limpiar:hover, .borrar:hover, .calcular:hover{
+.funciones:hover{
     background-color: rgb(141, 50, 50);
     cursor: pointer;
 }
-.numero9:hover, .numero8:hover, .numero7:hover, .numero6:hover, .numero5:hover, .numero4:hover, .numero3:hover, .numero2:hover, .numero1:hover, .numero0:hover, .puntodecimal:hover{
+.numeros:hover, .punto:hover{
     background-color: rgb(179, 147, 109);
     cursor: pointer;
 }
-.dividir:hover, .multiplicar:hover, .suma:hover, .resta:hover{
+.operador:hover{
     background-color: rgb(77, 124, 71);
     cursor: pointer;
 }
